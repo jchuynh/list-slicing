@@ -31,7 +31,13 @@ def custom_len(input_list):
 
     """
 
-    return 0
+    counter = 0
+
+    for item in input_list:
+
+        counter += 1
+
+    return counter
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -59,6 +65,15 @@ def custom_append(input_list, value):
 
     """
 
+    # l_value = [value]
+    # print(l_value)
+    input_list += [value]
+
+
+   #for idx, char in enumerate(input_list):
+        #print(idx, char)
+
+
     pass
 
 
@@ -78,6 +93,8 @@ def custom_extend(input_list, second_list):
 
     """
 
+    input_list += second_list
+
     pass
 
 
@@ -90,12 +107,16 @@ def custom_insert(input_list, index, value):
     For example:
 
         >>> months = ['Jan', 'Mar']
-        >>> custom_insert(months, 1, 'Feb')
+        >>> custom_insert(months, 1, 'Feb'
         >>> months == ['Jan', 'Feb', 'Mar']
         True
 
     """
+    
+    # input_list[index] = value # 
 
+    # slice_beg + value + slice_end
+     input_list[:0]
     pass
 
 
