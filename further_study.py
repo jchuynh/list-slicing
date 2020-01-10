@@ -107,7 +107,7 @@ def custom_insert(input_list, index, value):
     For example:
 
         >>> months = ['Jan', 'Mar']
-        >>> custom_insert(months, 1, 'Feb'
+        >>> custom_insert(months, 1, 'Feb')
         >>> months == ['Jan', 'Feb', 'Mar']
         True
 
@@ -116,7 +116,8 @@ def custom_insert(input_list, index, value):
     # input_list[index] = value # 
 
     # slice_beg + value + slice_end
-     input_list[:0]
+    # top = 
+    input_list[index:index] = [value] 
     pass
 
 
@@ -135,6 +136,21 @@ def custom_remove(input_list, value):
         True
 
     """
+    # list slicing is used
+
+    # for idx, item in enumerate(input_list):
+    #     if item == value:
+    #         input_list[idx:idx] = "A"
+    #          print(input_list)
+
+
+    # for item in input_list:
+    #     # print(note)
+    #     if item == value:
+    #         # print(value)
+    #         item = []
+    #         print(input_list)
+
 
     pass
 
