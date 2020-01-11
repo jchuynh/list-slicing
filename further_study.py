@@ -31,13 +31,10 @@ def custom_len(input_list):
 
     """
 
-    counter = 0
-
-    for item in input_list:
-
-        counter += 1
-
-    return counter
+    counter = 0 # start with counter at 0
+    for item in input_list: # for each item in the input_list
+        counter += 1 # change the counter (in the same memory area) to 1
+    return counter # return the counter to reveal the length of the list
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -64,17 +61,12 @@ def custom_append(input_list, value):
         True
 
     """
-
-    # l_value = [value]
+    # the code below does not work
+    # list() splits the string vale into characters
+    # l_value = list(value)
     # print(l_value)
-    input_list += [value]
 
-
-   #for idx, char in enumerate(input_list):
-        #print(idx, char)
-
-
-    pass
+    input_list += [value] # adding the orignal input_list to the value as a list
 
 
 def custom_extend(input_list, second_list):
@@ -93,9 +85,9 @@ def custom_extend(input_list, second_list):
 
     """
 
-    input_list += second_list
+    input_list += second_list # adding the second list to the of the input_list
 
-    pass
+    # [] is not required around second_list - second_list is in list
 
 
 def custom_insert(input_list, index, value):
@@ -114,10 +106,10 @@ def custom_insert(input_list, index, value):
     """
     
     # input_list[index] = value # 
-
     # slice_beg + value + slice_end
-    # top = 
-    input_list[index:index] = [value] 
+
+    input_list[index:index] = [value] # 
+
     pass
 
 
@@ -137,6 +129,15 @@ def custom_remove(input_list, value):
 
     """
     # list slicing is used
+    counter = 0
+
+    for item in input_list:
+        if item == value:
+            counter += 1
+            if counter == 1:
+                [idx for idx, note in enumerate(input_list) input_list[idx:idx] = [""]
+                    
+
 
     # for idx, item in enumerate(input_list):
     #     if item == value:
@@ -221,6 +222,8 @@ def custom_reverse(input_list):
         True
 
     """
+
+    # 
 
     pass
 
